@@ -5,13 +5,15 @@
 **🏷️ Tags:** Smoke, Positive  
 **🗝️ Preconditions:**
 - Cart is empty
+
 **👣 Steps:**
 - Click on Espresso cup
 - Click on Total box in the right bottom corner
 - Enter payment details. Name=Oleksii, Email=oleksii@infopulse.com
 - Click submit button
+
 **💡 Expected Results:**
-- Verify the message about successfull purchase displayed
+- Verify the message about successfully purchase displayed
 - Verify the cart is empty
 
 ## Test 02 - Buy an espresso from the cart page
@@ -19,14 +21,17 @@
 **🏷️ Tags:** Positive  
 **🗝️ Preconditions:**
 - Cart is empty
+
 **👣 Steps:**
 - Click on Espresso cup
 - Go to cart page
-- Verify there is 1 item, Espresso, in the the list
+- Verify there is 1 item, Espresso, in the list
 - Enter payment details. Name=Oleksii, Email=oleksii@infopulse.com
-- Click submit button
+- Click submit button 
+
 **💡 Expected Results:**
-- Verify the message about successfull purchase displayed
+- Verify user is redirected to the main page
+- Verify the message about successfully purchase displayed
 - Verify the cart is empty
 
 ## Test 03 - Check a random promo on each 3rd coffee added and decline
@@ -34,23 +39,27 @@
 **🏷️ Tags:** Positive, Promo   
 **🗝️ Preconditions:**
 - Cart is empty
+
 **👣 Steps:**
 - Click 3 times on coffee cups
 - Verify promo offer displayed
 - Click "Nah, I'll skip" button
-- Verify tere are still 3 cups in the cart
+- Verify there are still 3 cups in the cart
 - Click 3 times on coffee cups
+
 **💡 Expected Results:**
 - Verify promo offer displayed
-- Verify tere are 6 cups in the cart
+- Verify there are 6 cups in the cart
 
 ## Test 04 - Check the empty cart page
 **📃 Description:** Verify there is no coffee in the empty cart  
 **🏷️ Tags:** Smoke, Negative  
 **🗝️ Preconditions:**
 - Cart is empty
+
 **👣 Steps:**
 - Go to cart page
+
 **💡 Expected Results:**
 - Verify the cart is empty
 - Verify there is a message that the cart is empty
