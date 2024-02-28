@@ -1,59 +1,59 @@
-# Example of test cases ready for automation for https://coffee-cart.app/
+# Приклади тест-кейсів, готових для автоматизації на https://coffee-cart.app/
 
-## Test 01.1 - Buy an espresso from the main page
-**📃 Description:** Verify it is possible to buy the single cup of coffee  
-**🏷️ Tags:** Smoke, Positive  
-**🗝️ Preconditions:**
-- User is in the main page
-- Cart is empty
+## Тест 01.1 - Купівля еспресо з головної сторінки
+**📃 Опис:** Перевірка можливості купівлі однієї чашки кави  
+**🏷️ Теги:** Smoke, Positive  
+**🗝️ Передумови:**
+- Користувач знаходиться на головній сторінці
+- Кошик порожній
 
-**👣 Steps:**
-- Click on Espresso cup
-- Click on Total box in the right bottom corner
-- Enter payment details
-  - Name. String. length > 0, all chars allowed. Example: Oleksii
-  - Email. String. Must match email pattern. Example: aaa@bbb
-- Click submit button
+**👣 Кроки:**
+- Натисніть на чашку еспресо
+- Натисніть на поле "Total" в правому нижньому куті
+- Введіть дані платежу
+  - Ім'я. Рядок. Довжина > 0, всі символи допустимі. Приклад: Олексій
+  - Email. Рядок. Повинен відповідати формату email. Приклад: aaa@bbb
+- Натисніть кнопку "Submit"
 
-**💡 Expected Results:**
-- Verify the message "Thanks for your purchase. Please check your email for payment." displayed
-- Verify the cart is empty
-- Verify the Total amount is $0.00
+**💡 Очікувані результати:**
+- Перевірте, що відображено повідомлення "Дякуємо за вашу покупку. Будь ласка, перевірте свою електронну пошту для оплати."
+- Перевірте, що кошик порожній
+- Перевірте, що загальна сума становить $0.00
 
-## Test 02.1 - Buy an espresso from the cart page
-**📃 Description:** Verify it is possible to buy the single cup of coffee from the cart page  
-**🏷️ Tags:** Positive  
-**🗝️ Preconditions:**
-- User is in the main page
-- Cart is empty
+## Тест 02.1 - Купівля еспресо зі сторінки кошика
+**📃 Опис:** Перевірка можливості купівлі однієї чашки кави зі сторінки кошика  
+**🏷️ Теги:** Positive  
+**🗝️ Передумови:**
+- Користувач знаходиться на головній сторінці
+- Кошик порожній
 
-**👣 Steps:**
-- Click on Espresso cup
-- Go to cart page
-- Verify there is 1 item, Espresso, in the list
-- Verify the total is $10.00
-- Enter payment details
-  - Name. String. length > 0, all chars allowed. Example: Oleksii
-  - Email. String. Must match email pattern. Example: aaa@bbb
-- Click submit button 
+**👣 Кроки:**
+- Натисніть на чашку еспресо
+- Перейдіть на сторінку кошика
+- Перевірте, що в списку є 1 товар - еспресо
+- Перевірте, що загальна сума становить $10.00
+- Введіть дані платежу
+  - Ім'я. Рядок. Довжина > 0, всі символи допустимі. Приклад: Олексій
+  - Email. Рядок. Повинен відповідати формату email. Приклад: aaa@bbb
+- Натисніть кнопку "Submit"
 
-**💡 Expected Results:**
-- Verify user is redirected to the main page
-- Verify the message "Thanks for your purchase. Please check your email for payment." displayed
-- Verify the cart is empty
-- Verify the Total amount is $0.00
+**💡 Очікувані результати:**
+- Перевірте, що користувач перенаправлений на головну сторінку
+- Перевірте, що відображено повідомлення "Дякуємо за вашу покупку. Будь ласка, перевірте свою електронну пошту для оплати."
+- Перевірте, що кошик порожній
+- Перевірте, що загальна сума становить $0.00
 
-## Test 02.2 - Check coffee cannot be bought without invalid details
-**📃 Description:** Verify it is not possible to buy the coffee if details are invalid  
-**🏷️ Tags:** Negative  
-**🗝️ Preconditions:**
-- User is in the main page
-- Cart is empty
+## Тест 02.2 - Перевірка, що каву не можна купити з недійсними даними
+**📃 Опис:** Перевірка, що неможливо купити каву, якщо дані недійсні  
+**🏷️ Теги:** Negative  
+**🗝️ Передумови:**
+- Користувач знаходиться на головній сторінці
+- Кошик порожній
 
-**👣 Steps:**
-- Click on Espresso cup
-- Click on Total box in the right bottom corner
-- Enter next pairs of payment details
+**👣 Кроки:**
+- Натисніть на чашку еспресо
+- Натисніть на поле "Total" в правому нижньому куті
+- Введіть наступні пари даних платежу
 
 | name      | email     |
 |-----------|-----------|
@@ -62,40 +62,40 @@
 | oleksii   | aaa.com   |
 | ol        | @         |
 | o         | a@        |
-- Click submit button 
+- Натисніть кнопку "Submit"
 
-**💡 Expected Results:**
-- Error is displayed
-- Coffee is not bought
+**💡 Очікувані результати:**
+- Відображається помилка
+- Каву не куплено
 
-## Test 03.1 - Check a random promo on each 3rd coffee added and decline
-**📃 Description:** Verify there is a promo on ech 3rd cup in the cart (3, 6, 9...)  
-**🏷️ Tags:** Positive, Promo   
-**🗝️ Preconditions:**
-- User is in the main page
-- Cart is empty
+## Тест 03.1 - Перевірка промоції на кожній 3-й доданій каві та відмова
+**📃 Опис:** Перевірка наявності промоції на кожній 3-й чашці в кошику (3, 6, 9...)  
+**🏷️ Теги:** Positive, Promo   
+**🗝️ Передумови:**
+- Користувач знаходиться на головній сторінці
+- Кошик порожній
 
-**👣 Steps:**
-- Click 3 times on coffee cups from the list: Espresso, Latte, Cappuccino, Mocha, Espresso Macchiato, Flat White, Americano
-- Verify promo offer displayed
-- Click "Nah, I'll skip" button
-- Verify there are still 3 cups in the cart
-- Click 3 times on coffee cups from the list: Espresso, Latte, Cappuccino, Mocha, Espresso Macchiato, Flat White, Americano
+**👣 Кроки:**
+- Натисніть 3 рази на чашки кави зі списку: Espresso, Latte, Cappuccino, Mocha, Espresso Macchiato, Flat White, Americano
+- Перевірте, що відображено пропозицію промоції
+- Натисніть кнопку "Nah, I'll skip"
+- Перевірте, що в кошику все ще 3 чашки
+- Натисніть 3 рази на чашки кави зі списку: Espresso, Latte, Cappuccino, Mocha, Espresso Macchiato, Flat White, Americano
 
-**💡 Expected Results:**
-- Verify promo offer displayed
-- Verify there are 6 cups in the cart
+**💡 Очікувані результати:**
+- Перевірте, що відображено пропозицію промоції
+- Перевірте, що в кошику 6 чашок
 
-## Test 04.1 - Check the empty cart page
-**📃 Description:** Verify there is no coffee in the empty cart  
-**🏷️ Tags:** Smoke, Negative  
-**🗝️ Preconditions:**
-- User is in the main page
-- Cart is empty
+## Тест 04.1 - Перевірка порожньої сторінки кошика
+**📃 Опис:** Перевірка відсутності кави в порожньому кошику  
+**🏷️ Теги:** Smoke, Negative  
+**🗝️ Передумови:**
+- Користувач знаходиться на головній сторінці
+- Кошик порожній
 
-**👣 Steps:**
-- Go to cart page
+**👣 Кроки:**
+- Перейдіть на сторінку кошика
 
-**💡 Expected Results:**
-- Verify the cart is empty
-- Verify there is a message "No coffee, go add some." displayed
+**💡 Очікувані результати:**
+- Перевірте, що кошик порожній
+- Перевірте, що відображено повідомлення "No coffee, go add some."
