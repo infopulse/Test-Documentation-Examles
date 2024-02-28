@@ -4,8 +4,8 @@ There are list of different testing docs examples can be used as a reference for
 ## Test Case
 |Document name| English                                                          | Ukrainian                                                          |
 |---|------------------------------------------------------------------|--------------------------------------------------------------------|
-|Manual test cases| [english](test%20cases/manual_test_cases_01_en)               | [ukrainian](test%20cases/manual_test_cases_01_ua.md)               |
-|Test cases ready for automation| [english](test%20cases/test_cases_ready_for_automation_01_en) | [ukrainian](test%20cases/test_cases_ready_for_automation_01_ua.md) |
+|Manual test cases| [english](test%20cases/manual_test_cases_01_en.md)               | [ukrainian](test%20cases/manual_test_cases_01_ua.md)               |
+|Test cases ready for automation| [english](test%20cases/test_cases_ready_for_automation_01_en.md) | [ukrainian](test%20cases/test_cases_ready_for_automation_01_ua.md) |
 |E2E test cases| TODO                                                             | TODO                                                               |
 
 ## BDD Scenarios
