@@ -2,7 +2,7 @@
 
 ## Test 01 - Buy an espresso from the main page
 **📃 Description:** Verify it is possible to buy the single cup of coffee  
-**Tags:** Smoke, Positive  
+**🏷️ Tags:** Smoke, Positive  
 **🗝️ Preconditions:**
 - Cart is empty
 **👣 Steps:**
@@ -16,7 +16,7 @@
 
 ## Test 02 - Buy an espresso from the cart page
 **📃 Description:** Verify it is possible to buy the single cup of coffee from the cart page  
-**Tags:** Positive  
+**🏷️ Tags:** Positive  
 **🗝️ Preconditions:**
 - Cart is empty
 **👣 Steps:**
@@ -31,7 +31,7 @@
 
 ## Test 03 - Check a random promo on each 3rd coffee added and decline
 **📃 Description:** Verify there is a promo on ech 3rd cup in the cart (3, 6, 9...)  
-**Tags:** Positive, Promo   
+**🏷️ Tags:** Positive, Promo   
 **🗝️ Preconditions:**
 - Cart is empty
 **👣 Steps:**
@@ -46,7 +46,7 @@
 
 ## Test 04 - Check the empty cart page
 **📃 Description:** Verify there is no coffee in the empty cart  
-**Tags:** Smoke, Negative  
+**🏷️ Tags:** Smoke, Negative  
 **🗝️ Preconditions:**
 - Cart is empty
 **👣 Steps:**
