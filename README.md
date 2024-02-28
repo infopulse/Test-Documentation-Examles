@@ -8,6 +8,11 @@ There are list of different testing docs examples can be used as a reference for
 |Test cases ready for automation| [english](test%20cases/test_cases_ready_for_automation_01_en) | [ukrainian](test%20cases/test_cases_ready_for_automation_01_ua.md) |
 |E2E test cases| TODO                                                             | TODO                                                               |
 
+## BDD Scenarios
+| Document name         |English|Ukrainian|
+|-----------------------|---|---|
+| Gherkin BDD scenarios | [english](bdd%20scenarios/bdd_scenario_01_en.md) | [ukrainian](bdd%20scenarios/bdd_scenario_01_ua.md) |
+
 ## Test Plan
 |Document name|English|Ukrainian|
 |---|---|---|
