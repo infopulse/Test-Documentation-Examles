@@ -4,12 +4,12 @@
 **📃 Description:** Verify it is possible to buy the single cup of coffee  
 **🏷️ Tags:** Smoke, Positive  
 **🗝️ Preconditions:**
-- User is in the main page
+- User is on the main page
 - Cart is empty
 
 **👣 Steps:**
 - Click on Espresso cup
-- Click on Total box in the right bottom corner
+- Click on Total box in the bottom right corner
 - Enter payment details
   - Name. String. length > 0, all chars allowed. Example: Oleksii
   - Email. String. Must match email pattern. Example: aaa@bbb
@@ -21,15 +21,15 @@
 - Verify the Total amount is $0.00
 
 ## Test 02.1 - Buy an espresso from the cart page
-**📃 Description:** Verify it is possible to buy the single cup of coffee from the cart page  
+**📃 Description:** Verify it is possible to buy a single cup of coffee from the cart page  
 **🏷️ Tags:** Positive  
 **🗝️ Preconditions:**
-- User is in the main page
+- User is on the main page
 - Cart is empty
 
 **👣 Steps:**
 - Click on Espresso cup
-- Go to cart page
+- Go to the cart page
 - Verify there is 1 item, Espresso, in the list
 - Verify the total is $10.00
 - Enter payment details
@@ -38,21 +38,21 @@
 - Click submit button 
 
 **💡 Expected Results:**
-- Verify user is redirected to the main page
+- Verify the user is redirected to the main page
 - Verify the message "Thanks for your purchase. Please check your email for payment." displayed
 - Verify the cart is empty
 - Verify the Total amount is $0.00
 
-## Test 02.2 - Check coffee cannot be bought without invalid details
+## Test 02.2 - Check coffee cannot be bought with invalid details
 **📃 Description:** Verify it is not possible to buy the coffee if details are invalid  
 **🏷️ Tags:** Negative  
 **🗝️ Preconditions:**
-- User is in the main page
+- User is on the main page
 - Cart is empty
 
 **👣 Steps:**
 - Click on Espresso cup
-- Click on Total box in the right bottom corner
+- Click on Total box in the bottom right corner
 - Enter next pairs of payment details
 
 | name      | email     |
@@ -69,18 +69,18 @@
 - Coffee is not bought
 
 ## Test 03.1 - Check a random promo on each 3rd coffee added and decline
-**📃 Description:** Verify there is a promo on ech 3rd cup in the cart (3, 6, 9...)  
+**📃 Description:** Verify there is a promo on each 3rd cup in the cart (3, 6, 9...)  
 **🏷️ Tags:** Positive, Promo   
 **🗝️ Preconditions:**
-- User is in the main page
+- User is on the main page
 - Cart is empty
 
 **👣 Steps:**
-- Click 3 times on coffee cups from the list: Espresso, Latte, Cappuccino, Mocha, Espresso Macchiato, Flat White, Americano
+- Click 3 times on a random coffee cup from the following list: Espresso, Latte, Cappuccino, Mocha, Espresso Macchiato, Flat White, Americano (so the 3 cups are selected)
 - Verify promo offer displayed
 - Click "Nah, I'll skip" button
 - Verify there are still 3 cups in the cart
-- Click 3 times on coffee cups from the list: Espresso, Latte, Cappuccino, Mocha, Espresso Macchiato, Flat White, Americano
+- Click 3 times on a random coffee cup from the following list: Espresso, Latte, Cappuccino, Mocha, Espresso Macchiato, Flat White, Americano (so the 3 cups are selected)
 
 **💡 Expected Results:**
 - Verify promo offer displayed
@@ -90,11 +90,11 @@
 **📃 Description:** Verify there is no coffee in the empty cart  
 **🏷️ Tags:** Smoke, Negative  
 **🗝️ Preconditions:**
-- User is in the main page
+- User is on the main page
 - Cart is empty
 
 **👣 Steps:**
-- Go to cart page
+- Go to the cart page
 
 **💡 Expected Results:**
 - Verify the cart is empty
